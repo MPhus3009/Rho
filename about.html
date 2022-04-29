@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rho Store</title>
+    <link rel="icon" href="./assets/img/logo/logo9pw.png" type="img-x/icon">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@100;300;500&display=swap" rel="stylesheet">
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+<body>
+    <div id="main">
+        <!--header  -->
+    <input type="checkbox" hidden class="cart-inp-cl" name="" id="cart-inp">
+    <div id="header" >
+        <ul class="header-list hide-on-mobie">
+            <li class="header-item" onclick="showMen()">MEN</li>
+            <li class="header-item" onclick="showWomen()">WOMEN</li>
+            <li class="header-item" onclick="showAbout()">
+                about Rho
+            </li>
+        </ul>
+        <ul class="header-list-mobie hide-on-pc-tablet">
+            <input type="checkbox" hidden class="mobie-list-inp-cl" name="" id="mobie-list-inp">
+            <label for="mobie-list-inp">
+                <i class="ti-align-justify mobie-list-icon"></i>
+            </label>
+            <div class="header-list-mobie-container">
+                 <label for="mobie-list-inp" class=" header-list-mobie-heading ">
+                    <span>Rho Store</span> <i class="header-list-mobie-close-logo  ti-close"></i>
+                 </label>
+                 <ul class="header-list-mobie-text-list">
+                    <label onclick="showMen()" for="mobie-list-inp" class="header-list-mobie-text-items">men</label>
+                    <label  onclick="showWomen()" for="mobie-list-inp" class="header-list-mobie-text-items">women</label>
+                    <label onclick="showAbout()"  for="mobie-list-inp" class="header-list-mobie-text-items">about rho</label>
+                </ul>
+                <img src="./assets/img/logo/rhowebblue.png" alt="" class="header-list-mobie-img">
+            </div>
+        </ul>
+        <a href="index.html" style="margin-top: 12px;">
+            <img  src="./assets/img/logo/rhowebblue.png" alt="" class="header-logo">
+        </a>
+        <div class="header-about">
+            <label for="cart-inp" class="about-cart">
+                 <span>
+                    CART
+                </span>
+              <i class="cart-logo ti-bag"></i>
+            </label> 
+        </div>
+    </div>
+
+    <!-- cart -->
+    <label for="cart-inp"  class="cart-overlay">
+    </label>
+    <div class="cart-container">
+        <h2 class="cart-heading">
+            Your Cart <label for="cart-inp" class=" cart-logo--close ti-close "></label>
+        </h2>
+        <!-- <div class="cart-content">
+            <ul class="cart-content-list">
+                <li class="cart-content-items">
+                    <img src="./assets/img/product/men/Cannon.png" alt="" class="cart-img">
+                    <p class="cart-text">Cannon</p>
+                    <p class="cart-price">2.559.000đ
+                        <button class="close-btn">
+                            <i class="close-product ti-close "></i>
+                        </button>
+                    </p>
+                    
+
+                </li>
+                <li class="cart-content-items">
+                    <img src="./assets/img/product/men/Cannon.png" alt="" class="cart-img">
+                    <p class="cart-text">Cannon</p>
+                    <p class="cart-price">2.559.000đ
+                        <button class="close-btn">
+                            <i class="close-product ti-close "></i>
+                        </button>
+                    </p>
+                </li>
+                <li class="cart-content-items">
+                    <img src="./assets/img/product/men/Cannon.png" alt="" class="cart-img">
+                    <p class="cart-text">Cannon</p>
+                    <p class="cart-price">2.559.000đ
+                        <button class="close-btn">
+                            <i class="close-product ti-close "></i>
+                        </button>
+                    </p>
+                </li>
+                <li class="cart-content-items">
+                    <img src="./assets/img/product/men/Cannon.png" alt="" class="cart-img">
+                    <p class="cart-text">Cannon</p>
+                    <p class="cart-price">2.559.000đ
+                        <button class="close-btn">
+                            <i class="close-product ti-close "></i>
+                        </button>
+                    </p>
+                </li>
+            </ul>
+
+            <div class="cart-pay">
+                <div class="cart-pay-text">
+                    <h4 class="cart-pay-heading">
+                        Total:
+                    </h4>
+                    <p class="cart-pay-price">
+                        1.000.000.000 đ
+                    </p>
+                </div>
+                <button class="cart-pay-btn">
+                    Pay Now <i class="ti-arrow-right"></i>
+                </button>
+            </div>
+
+
+        </div> -->
+
+        <div class="no-cart">
+            <h3 class="no-cart-heading">
+                There are currently no products in your cart.
+            </h3>
+            <a href="#" class="no-cart-btn">
+                <label for="cart-inp" style="cursor: pointer; display: block;" class="abc">
+                        Shopping now <i class="ti-arrow-right"></i>
+                 </label>
+            </a> 
+        </div>
+        
+    </div>
+    
+    <!-- slide -->
+    <div class="slider-container-about">
+        <img src="./assets/img/slide/slide-about.png" alt="" class="slider-about hide-on-mobie">
+        <img src="./assets/img/about/278085593_730758708091365_4852886041079683978_n.png" alt="" class="slider-about-mobie hide-on-pc-tablet">
+        
+    </div>
+
+    <!-- container -->
+
+    <div class="container-about">
+        <!-- hello -->
+        <div class="about-hello">
+            <h1 class="about-hello-heading">
+                Hello, We are Rho
+            </h1>
+            <img src="./assets/img/logo/logo9pblue.png" alt="" class="about-hello-logo">
+            <p class="about-hello-text">
+                We turn indispensable accessories into inspirational spiritual symbols, to motivate the young Vietnamese generation to keep moving forward.
+               
+            </p>
+        </div>
+        <!-- why not -->
+        <div class="about-whynot">
+            <img src="./assets/img/about/about-whynot.png" alt="" class="about-whynot-img">
+            <div class="about-whynot-text mt-120px">
+                <p class="about-whynot-text-1">why not ?</p>
+                <p class="about-whynot-text-2">That was our question at the start.</p>
+                <h2 class="about-whynot-text-heading">
+                    And also the spirit of “Why not” that we want to convey
+                </h2>
+                <p class="about-whynot-text-3">
+                    With products designed with enthusiasm, desire and creative minds by a team of young Vietnamese people, we believe that the "Why not" spirit will always accompany and inspire you. Daily.
+
+                </p>
+            </div>
+        </div>
+        <!-- icon -->
+        <div class="about-icon mt-120px ">
+                    <div class=" about-icon-text">
+                        <img src="./assets/img/about/Illus-01.2bc704d7.png" alt="" class="about-icon-img">
+                        <h3 class="about-icon-heading">
+                            Enterprising
+                        </h3>
+                        <p class="about-icon-phar">
+                            With the desire to become your companion, we believe that we must have the courage to overcome challenges, dare to think, dare to do and be different.
+                        </p>
+                    </div>
+
+                    <div class="  about-icon-text">
+                        <img src="./assets/img/about/Illus-02.f271c5c6.png" alt="" class="about-icon-img">
+                        <h3 class="about-icon-heading">
+                            Start and end with the customer
+                        </h3>
+                        <p class="about-icon-phar">
+                            With the spirit of warriors, we always fight hard every day to bring the most “WOW” experiences to young Vietnamese people.
+                        </p>
+                    </div>
+
+                    <div class="  about-icon-text">
+                        <img src="./assets/img/about/Illus-03.53789ba0.png" alt="" class="about-icon-img">
+                        <h3 class="about-icon-heading">
+                            Inspire
+                        </h3>
+                        <p class="about-icon-phar">
+                            In the future, we are the product that creates the world, the young Vietnamese generation confidently pursues their passion, "Why not?" become everyone's philosophy of life.
+                        </p>
+                    </div>
+            
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="mt-120px">
+            <a href="#">
+
+                <img src="./assets/img/logo/logo9pw.png" alt="" class="footer-logo">
+            </a>
+            <div class="footer-address">
+                <h3 class="footer-heading">
+                    address
+                </h3>
+                <p class="footer-phar addre">
+                    <a href="https://www.google.com/maps"> <i class="fas fa-map-marker-alt"></i>28/2/2 Huỳnh Phan Hộ, Phường Trà An, Quận Bình Thủy, Tp. Cân Thơ</a>
+                    <a href="tel:0774008040"> <i class="fas fa-mobile-alt"></i>0774008040</a>
+                    <a href="mailto:phu3009@gmail.com"><i class="far fa-envelope"></i>phu3009@gmail.com</a>
+                </p>
+            </div>
+            <div class="footer-contact">
+                <h3 class="footer-heading">
+                    contact
+                </h3>
+                <p class="footer-phar mb-32px-on-mobie">
+                    <a href="https://www.facebook.com/tuilaminhphunehihi"><i class=" conact-icon fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class=" conact-icon fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class=" conact-icon fab fa-youtube"></i></a>
+                </p>
+            </div>
+    </footer>
+    </div>
+</body>
+</html>
